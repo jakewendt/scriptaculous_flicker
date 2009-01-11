@@ -1,0 +1,34 @@
+Scriptaculous Effect: Flicker
+by Jake Wendt, 2007
+
+Changes the visibility of a tag at relatively random intervals.
+
+
+Options
+=======
+
+fps: 
+	basically, how often to possibly switch the visibility
+
+threshold:
+	This number is used to compare against Math.random() to determine whether tag is hidden or visible.  Since Math.random() only returns a number between 0 and 1, it is kinda pointless to set this outside this range.  You probably want it somewhere between 0.25 and 0.75.
+	(var visibility = ( Math.random() < this.options.threshold ) ? "hidden" : "visible";)
+	n <= 0: tag will always be visible.
+	n >= 1: tag will always be hidden.
+
+endvisibility:
+	kinda obvious
+
+
+Example
+=======
+
+new Effect.Flicker('thisimg', {
+	delay: 1, 
+	fps: 10, 
+	duration: 9999, 
+	threshold: 0.3, 
+	endvisibility: 'visible', 
+	queue: 'end' 
+});
+

@@ -1,0 +1,39 @@
+body {
+	height: 100%; 
+	width:  100%;
+	background-color: black;
+}
+
+* {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 11px;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	white-space: nowrap;
+	color: #000000;
+	color: black; 
+}
+
+.cssnav	{
+	background-image:  url(img/P9220080b_03.jpg);
+	background-repeat: no-repeat;
+	display: block;
+	width: 182px;
+	height: 252px;
+}
+
+.cssnav a {
+	width: 182px;
+	height: 252px;
+	float: left;
+	text-decoration: none;
+}
+
+.cssnav img {width: 182px; height: 252px; }
+
+* html a:hover {visibility:visible}
+
+.cssnav a:hover img{visibility:hidden}
+
